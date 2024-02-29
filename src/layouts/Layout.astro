@@ -25,6 +25,7 @@ const { title, description, image = "/favicon.jpeg" } = Astro.props;
 
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
+		<meta property="twitter:card" content="summary" />
 		<meta name="og:image" content={new URL(image, Astro.site)} />
 		<meta property="og:site_name" content={title} />
 		<meta property="og:url" content={Astro.site} />
