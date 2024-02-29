@@ -12,11 +12,17 @@ const { title, description } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="locale" content="de_DE" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="theme-color" content="#3AEA7E" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
+
+		<meta property="og:type" content="website" />
+		<meta name="og:image" content="/favicon.jpeg" />
+		<meta property="og:site_name" content="Gurkenparty" />
+		<meta property="og:url" content="http://gurken.party" />
 	</head>
 	<body>
 		<slot />
@@ -36,7 +42,7 @@ const { title, description } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: monospace;
 		background: #121916;
 		background-size: 224px;
 	}
