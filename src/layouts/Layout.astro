@@ -25,9 +25,9 @@ const { title, description, image = "/favicon.jpeg" } = Astro.props;
 
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
-		<meta name="og:image" content={new URL(image, Astro.url)} />
+		<meta name="og:image" content={new URL(image, Astro.site)} />
 		<meta property="og:site_name" content={title} />
-		<meta property="og:url" content={Astro.url} />
+		<meta property="og:url" content={Astro.site} />
 		<meta name="theme-color" content="#3AEA7E" />
 	</head>
 	<body>
