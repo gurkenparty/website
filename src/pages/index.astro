@@ -9,6 +9,9 @@ import Gradient from "../components/Gradient.astro";
 	title="Gurkenparty"
 	description="Wir sind drei deutsche Gurkenprogrammierer!"
 >
+	<div class="top-bar">
+		<button class="menu-button">Menü</button>
+	</div>
 	<Main>
 		<Header>Willkommen bei den <Gradient>Gurken.</Gradient></Header>
 		<p>Wir sind drei deutsche Gurkenprogrammierer!</p>
@@ -17,6 +20,28 @@ import Gradient from "../components/Gradient.astro";
 </Layout>
 
 <style>
+	.top-bar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 40px;
+		background-color: rgb(var(--accent));
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+	.menu-button {
+		background: none;
+		border: none;
+		color: white;
+		font-size: 18px;
+		cursor: pointer;
+	}
+
 	.footer-bar {
 		position: fixed;
 		bottom: 0;

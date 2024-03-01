@@ -11,6 +11,6 @@
   ],
   "theme_color": "#3AEA7E",
   "background_color": "#121916",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait"
 }
