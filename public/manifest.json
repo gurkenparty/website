@@ -1,0 +1,16 @@
+{
+  "name": "Willkommen bei den Gurken.",
+  "short_name": "Gurkenparty",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "theme_color": "#3AEA7E",
+  "background_color": "#121916",
+  "display": "standalone",
+  "orientation": "portrait"
+}
