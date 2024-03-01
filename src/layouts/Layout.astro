@@ -1,4 +1,5 @@
 ---
+import Meta from "../components/Meta.astro"
 interface Props {
 	title: string;
 	description?: string;
@@ -11,25 +12,12 @@ const { title, description, image = "/favicon.jpeg" } = Astro.props;
 <!doctype html>
 <html lang="de">
 	<head>
-		<!-- Metadata -->
-		<meta charset="utf-8" />
-		<meta name="locale" content="de_DE" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/jpeg" href={image} />
-		<meta name="generator" content={Astro.generator} />
-
-		<!-- Main Tags -->
-		<title>{title}</title>
-		<meta name="title" content={title} />
-		<meta name="description" content={description} />
-
-		<!-- Open Graph -->
-		<meta property="og:type" content="website" />
-		<meta property="twitter:card" content="summary" />
-		<meta name="og:image" content={new URL(image, Astro.site)} />
-		<meta property="og:site_name" content={title} />
-		<meta property="og:url" content={Astro.site} />
-		<meta name="theme-color" content="#3AEA7E" />
+		<Meta
+			title={title}
+			description={description}
+			color=#3AEA7E
+			image={image}
+		/>
 	</head>
 	<body>
 		<slot />
