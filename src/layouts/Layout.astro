@@ -1,5 +1,5 @@
 ---
-import Meta from "../components/Meta.astro"
+import Meta from "../components/Meta.astro";
 interface Props {
 	title: string;
 	description?: string;
@@ -15,30 +15,29 @@ const { title, description, image = "/favicon.jpeg" } = Astro.props;
 		<Meta
 			title={title}
 			description={description}
-			color=#3AEA7E
+			color="#3AEA7E"
 			image={image}
 		/>
 	</head>
 	<body>
 		<slot />
+		<style is:global>
+			:root {
+				--accent: 58, 234, 126;
+				--accent-light: 204, 249, 213;
+				--accent-dark: 10, 102, 69;
+				--accent-gradient: linear-gradient(
+					45deg,
+					rgb(var(--accent)),
+					rgb(var(--accent-light)) 30%,
+					white 60%
+				);
+			}
+			html {
+				font-family: monospace;
+				background: #121916;
+				background-size: 224px;
+			}
+		</style>
 	</body>
-
-	<style is:global>
-		:root {
-			--accent: 58, 234, 126;
-			--accent-light: 204, 249, 213;
-			--accent-dark: 10, 102, 69;
-			--accent-gradient: linear-gradient(
-				45deg,
-				rgb(var(--accent)),
-				rgb(var(--accent-light)) 30%,
-				white 60%
-			);
-		}
-		html {
-			font-family: monospace;
-			background: #121916;
-			background-size: 224px;
-		}
-	</style>
 </html>
