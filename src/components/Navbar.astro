@@ -1,9 +1,6 @@
----
-let open = true;
----
 
 <div class="top-bar">
-    <button class="menu-button" onclick={open = !open}>☰</button>
+    <button class="menu-button">☰</button>
     <div id="btnbar" class="top-bar-buttons">
         <button class="top-bar-button">About Us</button>
         <button class="top-bar-button">Gurkenland</button>
@@ -16,7 +13,7 @@ let open = true;
         position: fixed;
         top: 0;
         left: 0;
-        width: {open ? "100%" : "0%"};
+        width: 100%;
         height: 40px;
         background-color: rgb(var(--accent));
         display: flex;
@@ -24,7 +21,7 @@ let open = true;
         justify-content: flex-start;
         padding: 0 20px;
         box-sizing: border-box;
-        transition: 0.5s;
+        transition: width 0.5s;
     }
     .menu-button {
         background: none;
