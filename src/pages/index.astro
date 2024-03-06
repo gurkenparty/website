@@ -5,6 +5,7 @@ import Header from "../components/Header.astro";
 import Gradient from "../components/Gradient.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import Nowrap from "../components/Nowrap.astro";
 ---
 
 <Layout
@@ -14,7 +15,7 @@ import Footer from "../components/Footer.astro";
 	<Navbar />
 	<Main style="text-align: center;">
 		<Header>
-			Willkommen bei den <Gradient>Gurken!</Gradient>
+			<Nowrap>Willkommen bei</Nowrap> <Nowrap>den <Gradient>Gurken!</Gradient></Nowrap>
 		</Header>
 		<p>Wir sind drei deutsche Gurkenprogrammierer!</p>
 	</Main>
