@@ -6,6 +6,8 @@ import Gradient from "../components/Gradient.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import Nowrap from "../components/Nowrap.astro";
+import Card from "../components/Card.astro";
+import CardRow from "../components/CardRow.astro";
 ---
 
 <Layout
@@ -19,7 +21,23 @@ import Nowrap from "../components/Nowrap.astro";
 			<Nowrap>Willkommen bei</Nowrap>
 			<Nowrap>den <Gradient>Gurken!</Gradient></Nowrap>
 		</Header>
-		<p>Wir sind drei deutsche Gurkenprogrammierer!</p>
+		<CardRow>
+			<Card
+				title="Sean"
+				description="allah"
+				avatar="https://media1.tenor.com/m/jfmI0j5FcpAAAAAd/loading-wtf.gif"
+			/>
+			<Card
+				title="Max Urin"
+				description="mashalla"
+				avatar="https://media.tenor.com/TP12G5jWn24AAAAi/nerd.gif"
+			/>
+			<Card
+				title="Freddi"
+				description="wallah"
+				avatar="https://media.tenor.com/liFJWwwNPM8AAAAi/dessert-battlefield.gif"
+			/>
+		</CardRow>
 	</Main>
 	<Footer />
 </Layout>

@@ -1,0 +1,75 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    image?: string;
+    avatar?: string;
+}
+
+const { title, description, image, avatar } = Astro.props;
+---
+
+<div class="card">
+    {
+        image && (
+            <img
+                class="image"
+                src={image}
+                alt="Hier sollte der Herrscher erscheinen"
+            />
+        )
+    }
+    <div class="content">
+        <div class="author">
+            <img class="avatar" src={avatar} />
+            <h3 class="title">{title}</h3>
+        </div>
+        <p class="description">{description}</p>
+    </div>
+</div>
+
+<style>
+    .card {
+        background-color: #aff2;
+        border-radius: 15px;
+        width: 200px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        padding: 10px;
+        transition: padding 0.25s;
+    }
+    .content {
+        height: 150px;
+    }
+    .image {
+        vertical-align: middle;
+        border-radius: 10px;
+    }
+    .avatar {
+        border-radius: 10px;
+        max-height: 2em;
+    }
+    .title {
+        margin: unset;
+        text-align: center;
+        font-size: 1.25em;
+    }
+    .card:hover {
+        background-color: rgb(var(--accent-dark));
+        box-shadow: 0px 0px 30px 30px rgba(var(--accent), 0.1);
+        padding: 15px;
+    }
+    .author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    @media (max-width: 650px) {
+        .card {
+            flex-direction: row;
+            width: unset;
+        }
+    }
+</style>
