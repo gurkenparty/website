@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Main from "../components/Main.astro";
+import Header from "../components/Header.astro";
+import Gradient from "../components/Gradient.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Nowrap from "../components/Nowrap.astro";
+import Card from "../components/Card.astro";
+import CardRow from "../components/CardRow.astro";
+---
+
+<Layout
+    title="Gurkenrepublik"
+    description="Wir sind drei deutsche Gurkenprogrammierer!"
+>
+    <Navbar />
+    <Main>
+        <Header>
+            <!-- Aligning header text to center -->
+            <Nowrap>Willkommen in</Nowrap>
+            <Nowrap>der <Gradient>Gurkenrepublik!</Gradient></Nowrap>
+        </Header>
+    </Main>
+    <h2>§ Allgemeine Verfassung</h2>
+    <ol>
+        <li>Die Gurke hat immer Recht.</li>
+        <li>Die Würde der Gurke ist unantastbar.</li>
+        <li>Wer diese Regeln nicht befolgt, wird abgegurkt.</li>
+    </ol>
+    <Footer />
+</Layout>
