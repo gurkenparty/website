@@ -6,8 +6,6 @@ import Gradient from "../components/Gradient.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import Nowrap from "../components/Nowrap.astro";
-import Card from "../components/Card.astro";
-import CardRow from "../components/CardRow.astro";
 ---
 
 <Layout
@@ -18,15 +16,15 @@ import CardRow from "../components/CardRow.astro";
     <Main>
         <Header>
             <!-- Aligning header text to center -->
-            <Nowrap>Willkommen in</Nowrap>
-            <Nowrap>der <Gradient>Gurkenrepublik.</Gradient></Nowrap>
+             Willkommen <Nowrap>in der</Nowrap>
+            <Gradient>Gurkenrepublik.</Gradient>
         </Header>
     </Main>
-    <h2>§ Allgemeine Verfassung</h2>
-    <ol>
-        <li>Die Gurke hat immer Recht.</li>
-        <li>Die Würde der Gurke ist unantastbar.</li>
-        <li>Wer diese Regeln nicht befolgt, wird abgegurkt.</li>
-    </ol>
-    <Footer />
 </Layout>
+<h2>§ Allgemeine Verfassung</h2>
+<ol>
+    <li>Die Gurke hat immer Recht.</li>
+    <li>Die Würde der Gurke ist unantastbar.</li>
+    <li>Wer diese Regeln nicht befolgt, wird abgegurkt.</li>
+</ol>
+<Footer />
