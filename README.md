@@ -6,7 +6,7 @@ Unsere super tolle website
 1. Repository Klonen
  
 ```sh
-git clone https://bricked.com/gurkenparty/website
+git clone https://github.com/gurkenparty/website
 ```
 
 2. Packete installieren
