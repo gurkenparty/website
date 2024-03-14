@@ -5,7 +5,6 @@ import Header from "../components/Header.astro";
 import Gradient from "../components/Gradient.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
-import Nowrap from "../components/Nowrap.astro";
 ---
 
 <Layout
@@ -14,11 +13,7 @@ import Nowrap from "../components/Nowrap.astro";
 >
     <Navbar />
     <Main>
-        <Header>
-            <!-- Aligning header text to center -->
-             Willkommen <Nowrap>in der</Nowrap>
-            <Gradient>Gurkenrepublik.</Gradient>
-        </Header>
+        <Header>Willkommen in der <Gradient>Gurkenrepublik.</Gradient></Header>
     </Main>
 </Layout>
 <h2>§ Allgemeine Verfassung</h2>

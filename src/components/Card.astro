@@ -40,7 +40,7 @@ const { title, description, image, avatar } = Astro.props;
         transition: padding 0.25s;
     }
     .content {
-        height: 150px;
+        height: fit-content;
     }
     .image {
         vertical-align: middle;
@@ -64,6 +64,10 @@ const { title, description, image, avatar } = Astro.props;
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+    .description
+    {
+        font-size: 10px;
     }
 
     @media (max-width: 650px) {
